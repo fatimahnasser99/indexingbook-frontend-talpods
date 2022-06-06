@@ -1,8 +1,13 @@
 import './App.css';
-import { Route, BrowserRouter } from 'react-router-dom';
+
+import ContanctsPage from './pages/ContactsPage';
 
 function App() {
-	return <div>hello</div>;
+	return (
+		<div>
+			<ContanctsPage />
+		</div>
+	);
 }
 
 export default App;
