@@ -1,0 +1,42 @@
+/*
+- dark blue --> #001049
+- blue --> #000F92
+- golden --> #A39306
+*/
+
+.indexList {
+	background-color: #000f92;
+	color: white;
+	width: 6%;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1%;
+}
+
+.index,
+.indexSelected {
+	background-color: #000f92;
+	font-size: medium;
+	margin: 5px 0px;
+	border: 0px none;
+	text-align: center;
+}
+.index {
+	color: white;
+}
+.indexSelected {
+	color: #a39306;
+}
+
+.loggedinBookContainer {
+	margin: 20px;
+	border: 4px solid #000f92;
+	border-radius: 20px;
+	padding: 20px 0px 20px 20px;
+	width: 300px;
+	min-height: 400px;
+	display: flex;
+	justify-content: space-between;
+}
