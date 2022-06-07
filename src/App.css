@@ -85,3 +85,13 @@ strong {
 	display: flex;
 	justify-content: space-evenly;
 }
+
+.navBar {
+	background-color: #001049;
+	color: #a39306;
+	height: 80px;
+	text-align: center;
+	font-size: xxx-large;
+	padding-left: 30px;
+	margin-bottom: 50px;
+}
