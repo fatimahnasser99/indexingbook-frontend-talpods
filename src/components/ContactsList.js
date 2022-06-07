@@ -3,8 +3,8 @@ import React from 'react';
 const ContactsList = (props) => {
 	function displayContacts(contact, index) {
 		return (
-			<div key={index} className='listItem'>
-				<li>{contact}</li>{' '}
+			<div className='listItemWrapper'>
+				<li key={index}>{contact}</li>{' '}
 				<svg
 					className='showMore'
 					width='20'
