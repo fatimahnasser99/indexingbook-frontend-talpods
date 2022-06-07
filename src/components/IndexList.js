@@ -3,8 +3,9 @@ import '../App.css';
 
 const IndexList = (props) => {
 	function displayIndex(index) {
-		let className = index === props.selectedIndex ? 'indexSelected' : 'index';
-		return <button className={className}>{index}</button>;
+		let important =
+			index === props.selectedIndex ? <strong>{index}</strong> : index;
+		return <button className='index'>{important}</button>;
 	}
 	return <div className='indexList'>{props.indexList.map(displayIndex)}</div>;
 };

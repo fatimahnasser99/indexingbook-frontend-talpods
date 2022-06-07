@@ -5,7 +5,7 @@ import IndexList from './IndexList';
 import ContactsList from './ContactsList';
 
 const ContactsBook = () => {
-	const indexList = ['A'];
+	const indexList = ['A', 'B'];
 	const contactsList = ['Anna', 'Aya'];
 
 	return (

@@ -15,19 +15,13 @@
 	padding: 1%;
 }
 
-.index,
-.indexSelected {
-	background-color: #000f92;
+.index {
+	color: white;
+	background-color: transparent;
 	font-size: medium;
 	margin: 5px 0px;
 	border: 0px none;
 	text-align: center;
-}
-.index {
-	color: white;
-}
-.indexSelected {
-	color: #a39306;
 }
 
 .title {
@@ -46,8 +40,16 @@
 	padding-bottom: 10px;
 }
 
-.showMore {
+.deleteCard {
+	padding: 0;
+	align-self: flex-start;
+	margin: -5px;
+}
+svg {
 	padding-right: 20px;
+}
+strong {
+	color: #a39306;
 }
 
 .loggedinBookContainer {
@@ -59,4 +61,27 @@
 	min-height: 400px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.contactCard {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid #000f92;
+	border-radius: 10px;
+	padding: 10px 10px 10px 20px;
+	margin-bottom: 20px;
+}
+.contactDetailsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 40px 20px;
+}
+
+.ContactsPageBodyContainer {
+	display: flex;
+	justify-content: space-evenly;
 }
