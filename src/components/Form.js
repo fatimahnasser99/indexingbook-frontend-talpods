@@ -5,17 +5,17 @@ const Form = (props) => {
 			<div className='centerDiv'>
 				<strong>Add New Contact</strong>
 			</div>
-			<label for='name'>Name:</label>
+			<label htmlFor='name'>Name:</label>
 			<br />
 			<input type='text' id='name' name='name' value='John Doe'></input>
 			<br />
 			<br />
-			<label for='phone'>Phone number:</label>
+			<label htmlFor='phone'>Phone number:</label>
 			<br />
 			<input type='number' id='phone' name='phone' value='92484758'></input>
 			<br />
 			<br />
-			<label for='email'>Email:</label>
+			<label htmlFor='email'>Email:</label>
 			<br />
 			<input
 				type='email'
