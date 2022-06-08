@@ -4,6 +4,32 @@
 - golden --> #A39306
 */
 
+svg {
+	padding-right: 20px;
+}
+strong {
+	color: #a39306;
+}
+table {
+	border: 2px solid #a39306;
+	width: 90%;
+	text-align: center;
+}
+
+table,
+th,
+td {
+	border: 2px solid #a39306;
+	border-collapse: collapse;
+	padding: 10px;
+	table-layout: fixed;
+}
+
+thead {
+	background-color: #000f92;
+	color: white;
+}
+
 .indexList {
 	background-color: #000f92;
 	color: white;
@@ -44,12 +70,6 @@
 	padding: 0;
 	align-self: flex-start;
 	margin: -5px;
-}
-svg {
-	padding-right: 20px;
-}
-strong {
-	color: #a39306;
 }
 
 .loggedinBookContainer {
@@ -94,4 +114,9 @@ strong {
 	font-size: xxx-large;
 	padding-left: 30px;
 	margin-bottom: 50px;
+}
+
+.adminPageContainer {
+	display: flex;
+	justify-content: center;
 }
