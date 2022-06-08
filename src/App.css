@@ -30,6 +30,19 @@ thead {
 	color: white;
 }
 
+input {
+	padding: 5px;
+}
+label {
+	color: #001049;
+	font-weight: 500;
+	padding: 5px 5px 10px 0px;
+}
+form strong {
+	font-weight: 700;
+	font-size: larger;
+	padding: 20px;
+}
 .indexList {
 	background-color: #000f92;
 	color: white;
@@ -116,7 +129,45 @@ thead {
 	margin-bottom: 50px;
 }
 
-.adminPageContainer {
+.tableContainer {
 	display: flex;
 	justify-content: center;
+}
+
+.formContainer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid #a39306;
+	border-radius: 15px;
+	width: 200px;
+	padding: 10px;
+}
+
+.hideForm {
+	display: none;
+}
+
+#submit {
+	background-color: #001049;
+	color: #a39306;
+	width: 50%;
+	font-size: medium;
+	border-color: #a39306;
+	font-weight: 600;
+	padding: 6px;
+	border-radius: 7px;
+}
+
+.centerDiv {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.adminPageContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
