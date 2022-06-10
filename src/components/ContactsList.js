@@ -1,10 +1,10 @@
 import React from 'react';
 
 const ContactsList = (props) => {
-	function displayContacts(contact, index) {
+	function displayContacts(contact) {
 		return (
 			<div className='listItemWrapper'>
-				<li key={index}>{contact}</li>{' '}
+				<li key={contact.id}>{contact.name}</li>{' '}
 				<svg
 					className='showMore'
 					width='20'
