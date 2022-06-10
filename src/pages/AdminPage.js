@@ -7,7 +7,6 @@ import ContactsTable from '../components/ContactsTable';
 import Form from '../components/Form';
 
 const AdminPage = () => {
-	const indexList = contacts.indexArray;
 	const contactsList = contacts;
 	const [form, formState] = useState(false);
 
@@ -26,7 +25,7 @@ const AdminPage = () => {
 					<Form />
 				</div>
 				<div className='tableContainer'>
-					<ContactsTable contactsList={contactsList} indexList={indexList} />
+					<ContactsTable contactsList={contactsList} />
 				</div>
 			</div>
 		</div>

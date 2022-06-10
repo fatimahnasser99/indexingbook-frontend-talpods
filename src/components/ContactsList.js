@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useSelector } from 'react-redux';
 const ContactsList = (props) => {
+	const index_state = useSelector((state) => state.indexList);
 	function displayContacts(contact) {
 		return (
 			<div className='listItemWrapper'>
@@ -24,8 +25,8 @@ const ContactsList = (props) => {
 			</div>
 		);
 	}
-	if (props.selectedIndex) {
-		const title = `"${props.selectedIndex}" Contacts`;
+	if (index_state.selectedIndex) {
+		const title = `"${index_state.selectedIndex}" Contacts`;
 		return (
 			<div className='bookcontent'>
 				<div className='title'>{title}</div>

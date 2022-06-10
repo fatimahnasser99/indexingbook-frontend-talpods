@@ -6,8 +6,6 @@ import ContactsList from './ContactsList';
 import { contacts } from '../data';
 
 const ContactsBook = () => {
-	const indexList = contacts.indexArray;
-
 	const contactsList = contacts['A'].map((contact) => {
 		return { id: contact.id, name: contact.name };
 	});
@@ -15,7 +13,7 @@ const ContactsBook = () => {
 	return (
 		<div className='loggedinBookContainer'>
 			<ContactsList contactsList={contactsList} selectedIndex='A' />
-			<IndexList indexList={indexList} selectedIndex='A' />
+			<IndexList />
 		</div>
 	);
 };
