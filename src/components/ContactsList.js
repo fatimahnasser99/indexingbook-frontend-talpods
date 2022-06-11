@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 const ContactsList = (props) => {
 	const index_state = useSelector((state) => state.indexList);
+	const contacts_state = useSelector((state) => state.contactsList.contactList);
 	function displayContacts(contact) {
 		return (
 			<div className='listItemWrapper'>
@@ -30,10 +31,14 @@ const ContactsList = (props) => {
 		return (
 			<div className='bookcontent'>
 				<div className='title'>{title}</div>
-				<ul>{props.contactsList.map(displayContacts)}</ul>
+				<ul>
+					{contacts_state[index_state.selectedIndex].map(displayContacts)}
+				</ul>
 			</div>
 		);
 	}
+	if (index_state.indexArray.length > 0)
+		return <div>select index to display contacts</div>;
 	return <div> no contacts available</div>;
 };
 

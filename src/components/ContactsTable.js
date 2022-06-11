@@ -1,9 +1,9 @@
 import React from 'react';
-//import { deleteContact } from '../services';
 import { useSelector } from 'react-redux';
 import TableRow from './TableRow';
-const ContactsTable = (props) => {
+const ContactsTable = () => {
 	const index_state = useSelector((state) => state.indexList);
+	const contacts_state = useSelector((state) => state.contactsList);
 	function displayRow(contact) {
 		return (
 			<TableRow
@@ -27,12 +27,8 @@ const ContactsTable = (props) => {
 			</thead>
 			<tbody>
 				{index_state.indexArray.map((index) =>
-					props.contactsList[index].map(displayRow)
+					contacts_state.contactList[index].map(displayRow)
 				)}
-
-				{/* {mycontacts.indexArray.map((index) =>
-					mycontacts[index].map((contact) => displayRow(contact))
-				)} */}
 			</tbody>
 		</table>
 	);
